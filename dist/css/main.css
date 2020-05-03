@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: "Montserrat";
+  color: #fff;
+  line-height: 2.5em;
+}
+
+/* General Styles */
+
+.holder {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 50%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  max-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.headline {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  background: #898989;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  display: block;
+}
+
+input {
+  display: block;
+  height: 30px;
+  width: 320px;
+  background: #898989;
+  color: #000000;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-size: 20px;
+  border: none;
+}
+
+.feel,
+.zip,
+.entry {
+  margin-top: 20px;
+}
+
+.entry {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: transparent;
+  color: #f8f8f5;
+  font-size: 1em;
+  border: 1px solid #000;
+  border-radius: 50px;
+  margin: 20px;
+  transition: ease-in-out 0.5s;
+}
+
+button:hover {
+  background: mediumseagreen;
+  color: #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Holder Entry Styles */
+
+.title {
+  font-size: 1em;
+}
+
+#entryHolder {
+  background: #898989;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#date {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#temp {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#content {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Placeholder Text Styles*/
+
+/* Firefox, Chrome, Opera */
+::placeholder {
+  color: #333;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: #333;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: #333;
+  font-family: "Oswald", sans-serif;
+}
