@@ -22,11 +22,27 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static("dist"));
 
+// GET route
+app.get("/all", (req, res) => {
+  console.log("GET request received");
+  res.send(projectData);
+});
+
+// POST route
+app.post("/add", (req, res) => {
+  projectData.date = req.body.date;
+  projectData.temp = req.body.temp;
+  projectData.feelings = req.body.feelings;
+  console.log("Data: ", req["body"]);
+  console.log({ projectData });
+  return res.json({ projectData });
+});
+
 // Setup Server
 const port = 8000;
 
 //Spin up server
-const server = app.listen(port, listening);
+app.listen(port, listening);
 
 //Callback of the function listening
 function listening() {
